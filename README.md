@@ -57,14 +57,9 @@ The following business questions will be addressed in the analysis
 
 The scale model cars database contains eight tables:
 
-1. **Customers**: customer data
-2. **Employees**: all employee information
-3. **Offices**: sales office information
-4. **Orders**: customers' sales orders
-5. **OrderDetails**: sales order line for each sales order
-6. **Payments**: customers' payment records
-7. **Products**: a list of scale model cars
-8. **ProductLines**: a list of product line categories
+
+| customers | employees | offices | orders | orderdetails | payments | products | productlines |
+| --------- | --------- | ------- | ------ | ------------ | -------- | -------- | ------------ | 
 
 
 The scale model cars database schema is as follows.
