@@ -5,21 +5,28 @@
 <h1 align="center">Scale Model Cars Database Analysis (SQL) 🚗 </h1>
 
 
+<p align="center">The primary objective of this project is to conduct an in-depth analysis of data from a sales records database, with the intent of extracting meaningful insights that can be employed to enhance decision-making processes. 
+  </p>
+
+
 
 
 ---
 
 ## 📝 Table of Contents
 
-- [🧐 About](#about)
+- [🧐 Description](#Description)
+- 
 - [🚀 Business Questions](business-questions)
 - [🎨 Contributing](#contributing)
 - [🌟 Support](#support)
 
-## 🧐 About <a name = "about"></a>
+## 🧐 Description <a name = "Description"></a>
 
 
-## Project Description
+## Description
+
+The power of data analysis in the realm of sales is well-established, as it enables the derivation of essential Key Performance Indicators (KPIs), thereby fostering more informed and streamlined decision-making practices.
 
 The Vehicle Distributors is a fictitious global wholesale distributor specializing in die-cast vehicle models, serving a diverse customer base across more than 15 countries. Our team has been entrusted with a significant dataset analysis project, aimed at assisting the company in making strategic decisions concerning prospective expansion efforts.
 
