@@ -1,5 +1,23 @@
-# Scale Model Cars Database Analysis (SQL)
+[![forthebadge](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/USES-SQLITE-.svg)]()
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
+
+<h1 align="center">Scale Model Cars Database Analysis (SQL) 🚗 </h1>
+
+
+
+
 ---
+
+## 📝 Table of Contents
+
+- [🧐 About](#about)
+- [🚀 Business Questions](business-questions)
+- [🎨 Contributing](#contributing)
+- [🌟 Support](#support)
+
+## 🧐 About <a name = "about"></a>
+
 
 ## Project Description
 
