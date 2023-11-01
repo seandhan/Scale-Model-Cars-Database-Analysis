@@ -16,15 +16,13 @@
 ## 📝 Table of Contents
 
 - [🧐 Description](#Description)
-- 
+- [💻 Database Overview](#Database-Overview)
+- [📊 Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - [🚀 Business Questions](business-questions)
 - [🎨 Contributing](#contributing)
 - [🌟 Support](#support)
 
 ## 🧐 Description <a name = "Description"></a>
-
-
-## Description
 
 The power of data analysis in the realm of sales is well-established, as it enables the derivation of essential Key Performance Indicators (KPIs), thereby fostering more informed and streamlined decision-making practices.
 
@@ -33,6 +31,28 @@ The Vehicle Distributors is a fictitious global wholesale distributor specializi
 The primary goal of this undertaking is to comprehensively investigate the provided dataset and furnish well-informed responses, driven by data, to the questions posed by our client.
 
 ---
+
+## 💻 Database Overview <a name = "Database-Overview"></a>
+
+The scale model cars database contains eight tables:
+
+| customers | employees | offices | orders | orderdetails | payments | products | productlines |
+| --------- | --------- | ------- | ------ | ------------ | -------- | -------- | ------------ | 
+
+The scale model cars database schema is as follows.
+
+![stores_db_schema.png](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/stores_db_schema.png)
+
+---
+
+## 📊 Exploratory Data Analysis <a name = "Exploratory-Data-Analysis"></a>
+
+The database was accessed and explored using Python SQLite.
+
+### Click to view 👇:
+
+[![forthebadge](figures/badges/solution-exploratory-data-analysis.svg)](https://github.com/vipul-shinde/customer-churn-prediction/blob/main/notebooks/01-eda-and-data-cleaning.ipynb)
+
 
 ## Table of Contents
 
@@ -80,18 +100,7 @@ The following business questions will be addressed in the analysis
 
 ## Project Details
 
-The scale model cars database contains eight tables:
 
-
-| customers | employees | offices | orders | orderdetails | payments | products | productlines |
-| --------- | --------- | ------- | ------ | ------------ | -------- | -------- | ------------ | 
-
-
-The scale model cars database schema is as follows.
-
-![stores_db_schema.png](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/stores_db_schema.png)
-
----
 
 ## Data Source
 
