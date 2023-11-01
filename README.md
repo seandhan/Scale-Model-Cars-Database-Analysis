@@ -34,6 +34,12 @@ The primary goal of this undertaking is to comprehensively investigate the provi
 
 ## 💻 Database Overview <a name = "Database-Overview"></a>
 
+The database source file can found through the following link:
+### Click to view 👇:
+
+[![Data_link](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Data-LINK-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/stores.db)
+
+
 The scale model cars database contains eight tables:
 
 | customers | employees | offices | orders | orderdetails | payments | products | productlines |
@@ -51,8 +57,7 @@ The database was accessed and explored using Python SQLite.
 
 ### Click to view 👇:
 
-[![Solution-Exploratory Data Analysis](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Solution-Exploratory%20Data%20Analysis-.svg)]([https://github.com/vipul-shinde/customer-churn-prediction/blob/main/notebooks/01-eda-and-data-cleaning.ipynb](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Solution-Exploratory%20Data%20Analysis-.svg))
-
+[![Solution-Exploratory Data Analysis](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Solution-Exploratory%20Data%20Analysis-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Exploratory%20Data%20Analysis/ReadME.md)
 
 
 
