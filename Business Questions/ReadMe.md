@@ -1,44 +1,8 @@
-# Business Questions
-
-1. <a href="#Question_1">Which products need more or less inventory?</a>
-
-1. [Which products need more or less inventory?](Question_1)
-2. <a href="#Question_2">How can we tailor marketing to customer behaviors?</a>
-3. <a href="#Question_3">What is the budget for acquiring new customers?</a>
-4. <a href="#Question_4">Which countries should marketing prioritize for best returns?</a>
-
-
----
-
-
-```python
-# Importing Libraries
-
-import sqlite3
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import seaborn as sns
-```
-
-
-```python
-# Database connection
-```
-
-
-```python
-%%capture
-%load_ext sql
-%sql sqlite:///stores.db
-```
-
----
 
 # Business Questions
 
 
-## Which products need more or less inventory?<a name = "Question_1"></a>
+## 1. Which products need more or less inventory?<a name = "Question_1"></a>
 
 The goal is to optimize inventory levels by examining inventory reports to pinpoint in-demand products that are running low and analyze which products are selling well. This will help prevent popular items from going out of stock, improving the customer experience.
 
@@ -432,7 +396,11 @@ bar_chart(priority_prods.productLine)
     
 
 
+```markdown
 Classic cars and motorcycles are in high demand and top priority for restocking inventory. However, vintage cars and planes have seen steady, even interest over time.
+```
+
+
 
 ---
 
@@ -484,9 +452,9 @@ WHERE productCode NOT IN (SELECT productCode FROM orderdetails);
 A potential strategy for slow-moving deadstock is price reductions to increase appeal and accelerate sales. Though counterintuitive, lower prices could save more money long-term than holding deadstock and prolonging costs.
 
 ---
+---
 
-<a id="Question_2"></a>
-## How can we tailor marketing to customer behaviors?
+## 2. How can we tailor marketing to customer behaviors?
 
 To address the question about customer information, we will segment customers into VIPs (Very Important Persons) and less engaged users. This categorization enables tailored strategies that meet the specific needs of each customer group.
 
@@ -504,7 +472,8 @@ SELECT
  JOIN products p 
    ON p.productCode = od.productCode
 GROUP BY o.customerNumber
-ORDER BY profit DESC;
+ORDER BY profit DESC
+LIMIT 5;
 ```
 
 *Output:*
@@ -542,378 +511,6 @@ ORDER BY profit DESC;
         <tr>
             <td>119</td>
             <td>60875.3</td>
-        </tr>
-        <tr>
-            <td>148</td>
-            <td>60477.38</td>
-        </tr>
-        <tr>
-            <td>187</td>
-            <td>60095.86</td>
-        </tr>
-        <tr>
-            <td>323</td>
-            <td>60013.99</td>
-        </tr>
-        <tr>
-            <td>131</td>
-            <td>58669.1</td>
-        </tr>
-        <tr>
-            <td>450</td>
-            <td>55931.37</td>
-        </tr>
-        <tr>
-            <td>321</td>
-            <td>55674.28</td>
-        </tr>
-        <tr>
-            <td>382</td>
-            <td>54724.68</td>
-        </tr>
-        <tr>
-            <td>276</td>
-            <td>54551.66</td>
-        </tr>
-        <tr>
-            <td>146</td>
-            <td>53211.19</td>
-        </tr>
-        <tr>
-            <td>353</td>
-            <td>52698.66</td>
-        </tr>
-        <tr>
-            <td>282</td>
-            <td>52331.45</td>
-        </tr>
-        <tr>
-            <td>278</td>
-            <td>52309.63</td>
-        </tr>
-        <tr>
-            <td>496</td>
-            <td>51771.5</td>
-        </tr>
-        <tr>
-            <td>145</td>
-            <td>50973.68</td>
-        </tr>
-        <tr>
-            <td>458</td>
-            <td>49192.39</td>
-        </tr>
-        <tr>
-            <td>386</td>
-            <td>48516.67</td>
-        </tr>
-        <tr>
-            <td>448</td>
-            <td>46777.54</td>
-        </tr>
-        <tr>
-            <td>363</td>
-            <td>45090.39</td>
-        </tr>
-        <tr>
-            <td>201</td>
-            <td>43523.64</td>
-        </tr>
-        <tr>
-            <td>398</td>
-            <td>43487.88</td>
-        </tr>
-        <tr>
-            <td>298</td>
-            <td>43393.75</td>
-        </tr>
-        <tr>
-            <td>161</td>
-            <td>41510.76</td>
-        </tr>
-        <tr>
-            <td>121</td>
-            <td>41391.52</td>
-        </tr>
-        <tr>
-            <td>175</td>
-            <td>41313.51</td>
-        </tr>
-        <tr>
-            <td>166</td>
-            <td>41305.17</td>
-        </tr>
-        <tr>
-            <td>167</td>
-            <td>40592.06</td>
-        </tr>
-        <tr>
-            <td>157</td>
-            <td>40429.55</td>
-        </tr>
-        <tr>
-            <td>205</td>
-            <td>40397.88</td>
-        </tr>
-        <tr>
-            <td>334</td>
-            <td>40095.85</td>
-        </tr>
-        <tr>
-            <td>357</td>
-            <td>39321.91</td>
-        </tr>
-        <tr>
-            <td>320</td>
-            <td>39136.14</td>
-        </tr>
-        <tr>
-            <td>186</td>
-            <td>38808.53</td>
-        </tr>
-        <tr>
-            <td>406</td>
-            <td>38755.5</td>
-        </tr>
-        <tr>
-            <td>412</td>
-            <td>38399.18</td>
-        </tr>
-        <tr>
-            <td>311</td>
-            <td>38334.95</td>
-        </tr>
-        <tr>
-            <td>462</td>
-            <td>36886.05</td>
-        </tr>
-        <tr>
-            <td>259</td>
-            <td>36744.01</td>
-        </tr>
-        <tr>
-            <td>286</td>
-            <td>36337.69</td>
-        </tr>
-        <tr>
-            <td>385</td>
-            <td>35987.68</td>
-        </tr>
-        <tr>
-            <td>227</td>
-            <td>34655.62</td>
-        </tr>
-        <tr>
-            <td>172</td>
-            <td>34650.17</td>
-        </tr>
-        <tr>
-            <td>249</td>
-            <td>34100.63</td>
-        </tr>
-        <tr>
-            <td>486</td>
-            <td>33598.57</td>
-        </tr>
-        <tr>
-            <td>362</td>
-            <td>32549.53</td>
-        </tr>
-        <tr>
-            <td>328</td>
-            <td>32240.57</td>
-        </tr>
-        <tr>
-            <td>319</td>
-            <td>31815.01</td>
-        </tr>
-        <tr>
-            <td>324</td>
-            <td>31667.93</td>
-        </tr>
-        <tr>
-            <td>239</td>
-            <td>31594.7</td>
-        </tr>
-        <tr>
-            <td>209</td>
-            <td>31526.6</td>
-        </tr>
-        <tr>
-            <td>112</td>
-            <td>31312.72</td>
-        </tr>
-        <tr>
-            <td>455</td>
-            <td>29265.9</td>
-        </tr>
-        <tr>
-            <td>379</td>
-            <td>28969.09</td>
-        </tr>
-        <tr>
-            <td>202</td>
-            <td>28882.99</td>
-        </tr>
-        <tr>
-            <td>250</td>
-            <td>28390.81</td>
-        </tr>
-        <tr>
-            <td>181</td>
-            <td>28279.5</td>
-        </tr>
-        <tr>
-            <td>129</td>
-            <td>28092.43</td>
-        </tr>
-        <tr>
-            <td>128</td>
-            <td>27728.34</td>
-        </tr>
-        <tr>
-            <td>350</td>
-            <td>27184.74</td>
-        </tr>
-        <tr>
-            <td>171</td>
-            <td>27143.39</td>
-        </tr>
-        <tr>
-            <td>240</td>
-            <td>26808.79</td>
-        </tr>
-        <tr>
-            <td>424</td>
-            <td>26001.55</td>
-        </tr>
-        <tr>
-            <td>314</td>
-            <td>25861.96</td>
-        </tr>
-        <tr>
-            <td>233</td>
-            <td>25856.86</td>
-        </tr>
-        <tr>
-            <td>299</td>
-            <td>25665.76</td>
-        </tr>
-        <tr>
-            <td>495</td>
-            <td>25244.69</td>
-        </tr>
-        <tr>
-            <td>144</td>
-            <td>25138.38</td>
-        </tr>
-        <tr>
-            <td>256</td>
-            <td>24610.8</td>
-        </tr>
-        <tr>
-            <td>177</td>
-            <td>24360.18</td>
-        </tr>
-        <tr>
-            <td>204</td>
-            <td>24296.9</td>
-        </tr>
-        <tr>
-            <td>260</td>
-            <td>24118.93</td>
-        </tr>
-        <tr>
-            <td>216</td>
-            <td>24113.54</td>
-        </tr>
-        <tr>
-            <td>242</td>
-            <td>23905.16</td>
-        </tr>
-        <tr>
-            <td>333</td>
-            <td>22579.18</td>
-        </tr>
-        <tr>
-            <td>471</td>
-            <td>22433.82</td>
-        </tr>
-        <tr>
-            <td>484</td>
-            <td>21225.65</td>
-        </tr>
-        <tr>
-            <td>339</td>
-            <td>20737.79</td>
-        </tr>
-        <tr>
-            <td>189</td>
-            <td>19588.29</td>
-        </tr>
-        <tr>
-            <td>447</td>
-            <td>18957.41</td>
-        </tr>
-        <tr>
-            <td>344</td>
-            <td>18953.3</td>
-        </tr>
-        <tr>
-            <td>452</td>
-            <td>18358.11</td>
-        </tr>
-        <tr>
-            <td>487</td>
-            <td>17230.12</td>
-        </tr>
-        <tr>
-            <td>475</td>
-            <td>17186.93</td>
-        </tr>
-        <tr>
-            <td>211</td>
-            <td>16868.68</td>
-        </tr>
-        <tr>
-            <td>347</td>
-            <td>14928.37</td>
-        </tr>
-        <tr>
-            <td>173</td>
-            <td>13734.7</td>
-        </tr>
-        <tr>
-            <td>456</td>
-            <td>13066.02</td>
-        </tr>
-        <tr>
-            <td>415</td>
-            <td>13033.35</td>
-        </tr>
-        <tr>
-            <td>381</td>
-            <td>11693.99</td>
-        </tr>
-        <tr>
-            <td>489</td>
-            <td>10868.04</td>
-        </tr>
-        <tr>
-            <td>103</td>
-            <td>10063.8</td>
-        </tr>
-        <tr>
-            <td>473</td>
-            <td>9532.93</td>
-        </tr>
-        <tr>
-            <td>198</td>
-            <td>6586.02</td>
-        </tr>
-        <tr>
-            <td>219</td>
-            <td>2610.87</td>
         </tr>
     </tbody>
 </table>
@@ -1084,9 +681,9 @@ LIMIT 5;
 
 
 ---
+---
 
-<a id="Question_3"></a>
-## What is the budget for acquiring new customers?
+## 3. What is the budget for acquiring new customers?
 
 To determine the budget for acquiring new customers, we need to calculate the Customer Lifetime Value (LTV). LTV shows the average revenue generated per customer over the entire customer relationship. This will indicate how much we can optimally spend on marketing to gain new customers.
 
@@ -1138,9 +735,9 @@ SELECT round(avg(profit),2) as Customer_lifetime_value
 The Lifetime Value (LTV) metric shows the total profitability of an average customer with our store. It allows us to forecast potential profits, like estimating we could earn \\$390,395 ($39,039.59 X 10) by acquiring 10 new customers next month. Knowing the LTV helps us set appropriate budgets for gaining new customers, as we can predict the long-term value of acquisitions.
 
 ----
+---
 
-<a id="Question_4"></a>
-## Which countries should marketing prioritize for best returns?
+## 4. Which countries should marketing prioritize for best returns?
 
 Since marketing has costs, it's important to focus on markets where our strategy will be most profitable. Targeting the highest potential markets will help ensure our marketing drives the best return on investment and maximizes profits.
 
@@ -1219,12 +816,5 @@ After having analysed the data based on the queries put forward by the Vehicle M
 
 - We should prioritize marketing in North America (USA), Europe (Spain, France), and Oceania (Australia, New Zealand). Concentrating on these targeted markets can improve efficiency and pursue the most promising opportunities. This focused approach can enhance overall business performance.
 
-
 ----
-
-
-<a id="Question_7"></a>
-
-<a id="Question_8"></a>
-
-<a id="Question_9"></a>
+----
