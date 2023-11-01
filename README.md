@@ -51,42 +51,18 @@ The database was accessed and explored using Python SQLite.
 
 ### Click to view 👇:
 
-[![forthebadge](figures/badges/solution-exploratory-data-analysis.svg)](https://github.com/vipul-shinde/customer-churn-prediction/blob/main/notebooks/01-eda-and-data-cleaning.ipynb)
+[![Solution-Exploratory Data Analysis](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Solution-Exploratory%20Data%20Analysis-.svg)]([https://github.com/vipul-shinde/customer-churn-prediction/blob/main/notebooks/01-eda-and-data-cleaning.ipynb](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Solution-Exploratory%20Data%20Analysis-.svg))
 
 
-## Table of Contents
 
-- [Skills and Tools Used](#skills-and-tools-used)
-- [Project Objectives](#project-objectives)
-- [Project Details](#project-details)
-- [Data Source](#data-source)
-- [Code](#code)
-- [Data Exploration](#data-exploration)
-- [Key Observations](#Key-Observations)
-- [Recommendations](#Recommendations)
-- [Contact Information](#contact-information)
+
 
 ---
 
-## Skills and Tools Used
+🚀 Business Questions](business-questions)
 
-- SQL
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-- Data visualization
+## 🚀 Business Questions <a name = "business-questions"></a>
 
----
-
-## Project Objectives
-
-The primary objective of this project is to conduct an in-depth analysis of data from a sales records database, with the intent of extracting meaningful insights that can be employed to enhance decision-making processes. The power of data analysis in the realm of sales is well-established, as it enables the derivation of essential Key Performance Indicators (KPIs), thereby fostering more informed and streamlined decision-making practices.
-
-Utilizing data analysis offers the potential for significant savings in terms of time, resources, and financial investments. Sales data analysis encompasses a wide array of elements, including sales performance, production, customer satisfaction, and workforce efficiency, presenting a diverse set of challenges that must be addressed. To realize the overarching objectives of this project, we will delve into the following inquiries to reveal practical and actionable insights.
-
-### Business Questions
 
 The following business questions will be addressed in the analysis
 
