@@ -1,47 +1,3 @@
-<span style = "font-family: Arial; font-weight:bold;font-size:2.5em;color:blue;">Scale Model Cars Database Analysis (SQL)
-
-Customers and Products Analysis Using SQL
-
-![model_cars_img.jpg](attachment:model_cars_img.jpg)
-
-*Source*: [Diecast Secrets](https://www.carmodels.com.au/blogs/news/16248-diecast-secrets-starting-a-model-car-collection)
-
-<span style = "font-family: Arial; font-weight:bold;font-size:2.2em;color:black;"> Introduction
-
-The Vehicle Distributors is a fictitious global wholesale distributor specializing in die-cast vehicle models, serving a diverse customer base across more than 15 countries. Our team has been entrusted with a significant dataset analysis project, aimed at assisting the company in making strategic decisions concerning prospective expansion efforts. 
-
-The primary goal of this undertaking is to comprehensively investigate the provided dataset and furnish well-informed responses, driven by data, to the questions posed by our client.
-
-**Dataset**
-
-The provided dataset, along with its corresponding schema, can be found [here](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/stores.db).
-
-**Database schema**
-
-The scale model cars database contains eight tables:
-
-1. **Customers**: customer data
-2. **Employees**: all employee information
-3. **Offices**: sales office information
-4. **Orders**: customers' sales orders
-5. **OrderDetails**: sales order line for each sales order
-6. **Payments**: customers' payment records
-7. **Products**: a list of scale model cars
-8. **ProductLines**: a list of product line categories
-
-
-The scale model cars database schema is as follows.
-
-![stores_db_schema.png](attachment:stores_db_schema.png)
-
----
-
-<span style = "font-family: Arial; font-weight:bold;font-size:2.2em;color:black;"> Objectives
-
-The primary objective of this project is to conduct an in-depth analysis of data from a sales records database, with the intent of extracting meaningful insights that can be employed to enhance decision-making processes. The power of data analysis in the realm of sales is well-established, as it enables the derivation of essential Key Performance Indicators (KPIs), thereby fostering more informed and streamlined decision-making practices.
-
----
-
 # Exploratory Data Analysis
 
 
@@ -78,9 +34,7 @@ import seaborn as sns
 SELECT name FROM sqlite_master WHERE type='table';
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+*Output:*
 
 
 
@@ -162,19 +116,11 @@ display(table_summary_df)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+    
+*Output:*
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -283,19 +229,10 @@ display(missing_values_df)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+    
+*Output:*
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -390,8 +327,10 @@ SELECT *
   FROM customers LIMIT 5;
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
@@ -504,9 +443,10 @@ SELECT *
 PRAGMA table_info(customers);
 ```
 
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -648,9 +588,10 @@ ORDER BY customer_count DESC
 LIMIT 10;
 ```
 
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -765,9 +706,10 @@ SELECT *
   FROM employees LIMIT 5;
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+     
+*Output:*
+
+
 
 
 
@@ -848,10 +790,10 @@ SELECT *
 %%sql
 PRAGMA table_info(employees);
 ```
-
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -952,9 +894,10 @@ FROM employees e
 LEFT JOIN employees m ON e.reportsTo = m.employeeNumber;
 ```
 
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -1201,9 +1144,10 @@ plt.show()
 SELECT *
   FROM offices;
 ```
+    
+*Output:*
 
-     * sqlite:///stores.db
-    Done.
+
     
 
 
@@ -1314,8 +1258,10 @@ SELECT *
 PRAGMA table_info(offices);
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
@@ -1426,9 +1372,10 @@ ORDER BY office_count DESC
 LIMIT 10;
 ```
 
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -1519,9 +1466,10 @@ SELECT *
   FROM orderdetails LIMIT 10;
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+     
+*Output:*
+
+
 
 
 
@@ -1620,9 +1568,10 @@ SELECT *
 PRAGMA table_info(orderdetails);
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+     
+*Output:*
+
+
 
 
 
@@ -1697,8 +1646,10 @@ SELECT *
   FROM orders LIMIT 5;
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
@@ -1774,10 +1725,10 @@ SELECT *
 %%sql
 PRAGMA table_info(orders);
 ```
-
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -1867,10 +1818,10 @@ FROM orders
 GROUP BY status
 ORDER BY status DESC;
 ```
-
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -1924,8 +1875,10 @@ GROUP BY year
 ORDER BY year;
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
@@ -2002,9 +1955,10 @@ GROUP BY year, quarter
 ORDER BY year, quarter;
 ```
 
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -2128,8 +2082,10 @@ SELECT *
   FROM payments LIMIT 5;
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
@@ -2188,8 +2144,10 @@ SELECT *
 PRAGMA table_info(payments);
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
@@ -2258,8 +2216,10 @@ ORDER BY total_payment DESC
 LIMIT 10;
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
@@ -2337,8 +2297,10 @@ GROUP BY year, quarter
 ORDER BY year, quarter;
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
@@ -2461,9 +2423,10 @@ plt.show()
 SELECT *
   FROM productlines LIMIT 5;
 ```
+    
+*Output:*
 
-     * sqlite:///stores.db
-    Done.
+
     
 
 
@@ -2522,9 +2485,10 @@ SELECT *
 PRAGMA table_info(productlines);
 ```
 
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -2585,9 +2549,10 @@ SELECT DISTINCT productLine
   FROM productlines
 ```
 
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -2638,9 +2603,10 @@ SELECT *
   FROM products LIMIT 5;
 ```
 
-     * sqlite:///stores.db
-    Done.
     
+*Output:*
+
+
 
 
 
@@ -2728,8 +2694,10 @@ SELECT *
 PRAGMA table_info(products);
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
@@ -2835,8 +2803,10 @@ GROUP BY productLine
 ORDER BY count DESC
 ```
 
-     * sqlite:///stores.db
-    Done.
+    
+*Output:*
+
+
     
 
 
