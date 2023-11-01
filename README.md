@@ -15,9 +15,9 @@
 
 ## 📝 Table of Contents
 
-- [🤓 Description](#Description)
-- [💻 Database Overview](#Database-Overview)
-- [📊 Exploratory Data Analysis](#Exploratory-Data-Analysis)
+- [🤓 Description](#description)
+- [💻 Database Overview](#database-overview)
+- [📊 Exploratory Data Analysis](#exploratory-data-analysis)
 - [🚀 Business Questions](business-questions)
 - [📗 Notebooks](#notebooks)
 - [✨ Recommendations](#recommnendations)
