@@ -18,12 +18,12 @@
 - [🤓 Description](#description)
 - [💻 Database Overview](#database-overview)
 - [📊 Exploratory Data Analysis](#exploratory-data-analysis)
-- [🚀 Business Questions](business-questions)
+- [🚀 Business Questions](#business-questions)
 - [📗 Notebooks](#notebooks)
 - [✨ Recommendations](#recommnendations)
 - [📧 Contact Information](#contact-information)
 
-## 🤓 Description <a name = "Description"></a>
+## 🤓 Description <a name = "description"></a>
 
 The power of data analysis in the realm of sales is well-established, as it enables the derivation of essential Key Performance Indicators (KPIs), thereby fostering more informed and streamlined decision-making practices.
 
@@ -33,7 +33,7 @@ The primary goal of this undertaking is to comprehensively investigate the provi
 
 ---
 
-## 💻 Database Overview <a name = "Database-Overview"></a>
+## 💻 Database Overview <a name = "database-overview"></a>
 
 The database source file can found through the following link:
 ### Click to view 👇:
@@ -57,7 +57,7 @@ The scale model cars database schema is as follows.
 
 ---
 
-## 📊 Exploratory Data Analysis <a name = "Exploratory-Data-Analysis"></a>
+## 📊 Exploratory Data Analysis <a name = "exploratory-data-analysis"></a>
 
 The database was accessed and explored using Python SQLite.
 
