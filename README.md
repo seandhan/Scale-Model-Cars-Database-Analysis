@@ -19,8 +19,8 @@
 - [💻 Database Overview](#database-overview)
 - [📊 Exploratory Data Analysis](#exploratory-data-analysis)
 - [🚀 Business Questions](#business-questions)
-- [📗 Notebooks](#notebooks)
 - [✨ Recommendations](#recommnendations)
+- [📗 Notebooks](#notebooks)
 - [📧 Contact Information](#contact-information)
 
 ## 🤓 Description <a name = "description"></a>
@@ -85,21 +85,6 @@ The following business questions will be addressed in the analysis
 
 [![Solution-Business Questions](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Solution-Business%20Questions-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Business%20Questions/ReadMe.md)
 
----
-
-
-
-## 📗 Notebooks <a name = "notebooks"></a>
-
-The Notebook for the "Exploratory Data Analysis" can be accessed below:
-
-### Click to view 👇:
-
-[![Exploratory Data Analysis](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Notebook-Exploratory%20Data%20analysis-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Notebooks/Scale%20Model%20Cars%20Database%20Analysis-%20EDA.ipynb)
-
-The Notebook for the "Business Questions" can be accessed below:
-
-[![Business Questions](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Notebook-Business%20Questions-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Notebooks/Scale%20Model%20Cars%20Database%20Analysis-Business%20Questions.ipynb)
 
 ---
 
@@ -114,6 +99,23 @@ After having analysed the data based on the queries put forward by the Vehicle M
 2. Personalized interactions and recognition of loyal customers can build long-term relationships and repeat business. For VIP customers, we can offer exclusive, tailored events and initiatives to increase satisfaction and loyalty. For less engaged customers, targeted campaigns based on their needs and preferences can reinvigorate interest in our brand.
 
 3. We should prioritize marketing in North America (USA), Europe (Spain, France), and Oceania (Australia, New Zealand). Concentrating on these targeted markets can improve efficiency and pursue the most promising opportunities. This focused approach can enhance overall business performance
+
+---
+
+
+
+
+## 📗 Notebooks <a name = "notebooks"></a>
+
+The Notebook for the "Exploratory Data Analysis" can be accessed below:
+
+### Click to view 👇:
+
+[![Exploratory Data Analysis](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Notebook-Exploratory%20Data%20analysis-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Notebooks/Scale%20Model%20Cars%20Database%20Analysis-%20EDA.ipynb)
+
+The Notebook for the "Business Questions" can be accessed below:
+
+[![Business Questions](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Notebook-Business%20Questions-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Notebooks/Scale%20Model%20Cars%20Database%20Analysis-Business%20Questions.ipynb)
 
 ---
 
