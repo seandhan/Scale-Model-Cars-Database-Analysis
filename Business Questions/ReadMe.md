@@ -37,8 +37,8 @@ import seaborn as sns
 
 # Business Questions
 
-<a id="Question_1"></a>
-## Which products need more or less inventory?<a name = "contributing"></a>
+
+## Which products need more or less inventory?<a name = "Question_1"></a>
 
 The goal is to optimize inventory levels by examining inventory reports to pinpoint in-demand products that are running low and analyze which products are selling well. This will help prevent popular items from going out of stock, improving the customer experience.
 
