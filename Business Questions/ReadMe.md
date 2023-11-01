@@ -1,52 +1,8 @@
-<span style = "font-family: Arial; font-weight:bold;font-size:2.5em;color:blue;">Scale Model Cars Database Analysis (SQL)
-
-Customers and Products Analysis Using SQL
-
-![model_cars_img.jpg](attachment:model_cars_img.jpg)
-
-*Source*: [Diecast Secrets](https://www.carmodels.com.au/blogs/news/16248-diecast-secrets-starting-a-model-car-collection)
-
-<span style = "font-family: Arial; font-weight:bold;font-size:2.2em;color:black;"> Introduction
-
-The Vehicle Distributors is a fictitious global wholesale distributor specializing in die-cast vehicle models, serving a diverse customer base across more than 15 countries. Our team has been entrusted with a significant dataset analysis project, aimed at assisting the company in making strategic decisions concerning prospective expansion efforts. 
-
-The primary goal of this undertaking is to comprehensively investigate the provided dataset and furnish well-informed responses, driven by data, to the questions posed by our client.
-
-**Dataset**
-
-The provided dataset, along with its corresponding schema, can be found [here](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/stores.db).
-
-**Database schema**
-
-The scale model cars database contains eight tables:
-
-1. **Customers**: customer data
-2. **Employees**: all employee information
-3. **Offices**: sales office information
-4. **Orders**: customers' sales orders
-5. **OrderDetails**: sales order line for each sales order
-6. **Payments**: customers' payment records
-7. **Products**: a list of scale model cars
-8. **ProductLines**: a list of product line categories
-
-
-The scale model cars database schema is as follows.
-
-![stores_db_schema.png](attachment:stores_db_schema.png)
-
----
-
-<span style = "font-family: Arial; font-weight:bold;font-size:2.2em;color:black;"> Objectives
-
-The primary objective of this project is to conduct an in-depth analysis of data from a sales records database, with the intent of extracting meaningful insights that can be employed to enhance decision-making processes. The power of data analysis in the realm of sales is well-established, as it enables the derivation of essential Key Performance Indicators (KPIs), thereby fostering more informed and streamlined decision-making practices.
-
-Utilizing data analysis offers the potential for significant savings in terms of time, resources, and financial investments. Sales data analysis encompasses a wide array of elements, including sales performance, production, customer satisfaction, and workforce efficiency, presenting a diverse set of challenges that must be addressed. To realize the overarching objectives of this project, we will delve into the following inquiries to reveal practical and actionable insights.
-
----
-
-<span style = "font-family: Arial; font-weight:bold;font-size:2.2em;color:black;"> Business Questions
+# Business Questions
 
 1. <a href="#Question_1">Which products need more or less inventory?</a>
+
+1. [Which products need more or less inventory?](Question_1)
 2. <a href="#Question_2">How can we tailor marketing to customer behaviors?</a>
 3. <a href="#Question_3">What is the budget for acquiring new customers?</a>
 4. <a href="#Question_4">Which countries should marketing prioritize for best returns?</a>
@@ -82,7 +38,7 @@ import seaborn as sns
 # Business Questions
 
 <a id="Question_1"></a>
-## Which products need more or less inventory?
+## Which products need more or less inventory?<a name = "contributing"></a>
 
 The goal is to optimize inventory levels by examining inventory reports to pinpoint in-demand products that are running low and analyze which products are selling well. This will help prevent popular items from going out of stock, improving the customer experience.
 
@@ -104,10 +60,7 @@ SELECT p.productCode,
  LIMIT 10;
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
-
+*Output:*
 
 
 
@@ -192,9 +145,10 @@ ORDER BY product_performance DESC
 LIMIT 10;
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+*Output:*
+
+
+
 
 
 
@@ -307,9 +261,10 @@ SELECT
 WHERE p.productCode IN table1 AND p.productCode IN table2
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+*Output:*
+
+
+
 
 
 
@@ -497,9 +452,10 @@ FROM products
 WHERE productCode NOT IN (SELECT productCode FROM orderdetails);
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+*Output:*
+
+
+
 
 
 
@@ -551,9 +507,10 @@ GROUP BY o.customerNumber
 ORDER BY profit DESC;
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+*Output:*
+
+
+
 
 
 
@@ -991,8 +948,10 @@ JOIN performance
 LIMIT 5;
 ```
 
-     * sqlite:///stores.db
-    Done.
+*Output:*
+
+
+
     
 
 
@@ -1071,9 +1030,10 @@ JOIN performance
 LIMIT 5;
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+*Output:*
+
+
+
 
 
 
@@ -1152,9 +1112,10 @@ SELECT round(avg(profit),2) as Customer_lifetime_value
   FROM performance;
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+*Output:*
+
+
+
 
 
 
@@ -1201,9 +1162,10 @@ ORDER BY profit DESC
 LIMIT 5;
 ```
 
-     * sqlite:///stores.db
-    Done.
-    
+*Output:*
+
+
+
 
 
 
@@ -1260,13 +1222,6 @@ After having analysed the data based on the queries put forward by the Vehicle M
 
 ----
 
-<a id="Question_3"></a>
-
-<a id="Question_4"></a>
-
-<a id="Question_5"></a>
-
-<a id="Question_6"></a>
 
 <a id="Question_7"></a>
 
