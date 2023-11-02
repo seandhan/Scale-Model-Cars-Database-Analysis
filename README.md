@@ -1,6 +1,10 @@
-[![forthebadge](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/USES-SQLITE-.svg)]()
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
+<p align="center">
+  <img src="https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/USES-SQLITE-.svg" />&nbsp;&nbsp;&nbsp;
+  <img src="https://forthebadge.com/images/badges/made-with-python.svg" />&nbsp;&nbsp;&nbsp;
+  <img src="https://forthebadge.com/images/badges/made-with-markdown.svg" />&nbsp;&nbsp;
+</p>
+
+
 
 <h1 align="center">Scale Model Cars Database Analysis (SQL) 🚗 </h1>
 
