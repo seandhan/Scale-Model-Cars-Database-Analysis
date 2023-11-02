@@ -19,7 +19,7 @@
 - [💻 Database Overview](#database-overview)
 - [📊 Exploratory Data Analysis](#exploratory-data-analysis)
 - [🚀 Business Questions](#business-questions)
-- [✨ Recommendations](#recommnendations)
+- [✨ Recommendations](#recommendations)
 - [📗 Notebooks](#notebooks)
 - [📧 Contact Information](#contact-information)
 
@@ -90,7 +90,7 @@ The following business questions will be addressed in the analysis
 
 
 
-## ✨ Recommendations <a name = "recommnendations"></a>
+## ✨ Recommendations <a name = "recommendations"></a>
 
 After having analysed the data based on the queries put forward by the Vehicle Model Company, the following are the recommendations that we could make based on the insights we have gained.
 
