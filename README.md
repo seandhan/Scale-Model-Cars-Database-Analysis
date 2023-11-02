@@ -38,7 +38,7 @@ The primary goal of this undertaking is to comprehensively investigate the provi
 The database source file can found through the following link:
 ### Click to view 👇:
 
-[![Data_link](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Data-LINK-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/stores.db)
+[![Data_link](https://github.com/seandhan/image_database/blob/main/Data-LINK-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/stores.db)
 
 
 The scale model cars database contains eight tables:
@@ -63,7 +63,7 @@ The database was accessed and explored using Python SQLite.
 
 ### Click to view 👇:
 
-[![Solution-Exploratory Data Analysis](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Solution-Exploratory%20Data%20Analysis-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Exploratory%20Data%20Analysis/ReadME.md)
+[![Solution-Exploratory Data Analysis](https://github.com/seandhan/image_database/blob/main/Solution-Dataset%20Exploration-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Exploratory%20Data%20Analysis/ReadME.md)
 
 
 
@@ -83,7 +83,7 @@ The following business questions will be addressed in the analysis
 
 ### Click to view 👇:
 
-[![Solution-Business Questions](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Solution-Business%20Questions-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Business%20Questions/ReadMe.md)
+[![Solution-Business Questions](https://github.com/seandhan/image_database/blob/main/Solution-Business%20Questions-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Business%20Questions/ReadMe.md)
 
 
 ---
@@ -111,11 +111,11 @@ The Notebook for the "Exploratory Data Analysis" can be accessed below:
 
 ### Click to view 👇:
 
-[![Exploratory Data Analysis](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Notebook-Exploratory%20Data%20analysis-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Notebooks/Scale%20Model%20Cars%20Database%20Analysis-%20EDA.ipynb)
+[![Exploratory Data Analysis](https://github.com/seandhan/image_database/blob/main/Notebook-Exploratory%20Data%20analysis-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Notebooks/Scale%20Model%20Cars%20Database%20Analysis-%20EDA.ipynb)
 
 The Notebook for the "Business Questions" can be accessed below:
 
-[![Business Questions](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/Notebook-Business%20Questions-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Notebooks/Scale%20Model%20Cars%20Database%20Analysis-Business%20Questions.ipynb)
+[![Business Questions](https://github.com/seandhan/image_database/blob/main/Notebook-Business%20Questions-.svg)](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/Notebooks/Scale%20Model%20Cars%20Database%20Analysis-Business%20Questions.ipynb)
 
 ---
 
